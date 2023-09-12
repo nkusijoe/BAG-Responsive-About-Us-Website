@@ -1,0 +1,159 @@
+/* Style for extra-large desktop screens */
+@media (min-width: 1200px) {
+header {
+        text-align: center;
+    }
+
+    header img {
+        max-width: 50%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #mission {
+        padding: 30px;
+    }
+}
+
+/* Style for large desktop screens */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    header {
+        text-align: center;
+    }
+
+    header img {
+        max-width: 40%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #mission {
+        padding: 40px;
+    }
+}
+
+/* Style for tablets (landscape orientation) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        text-align: center;
+    }
+
+    header img {
+        max-width: 50%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #mission {
+        padding: 30px;
+    }
+}
+
+/* Style for tablets (portrait orientation) */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    header {
+        text-align: center;
+    }
+
+    header img {
+        max-width: 60%;
+        height: auto;
+        padding: 10px;
+    }
+
+    #mission {
+        padding: 20px;
+    }
+}
+
+/* Style for small tablets and large smartphones */
+@media (min-width: 600px) and (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+
+    header img {
+        max-width: 70%;
+        height: auto;
+        padding: 10px;
+    }
+
+    #mission {
+        padding: 15px;
+    }
+}
+
+/* Style for smaller smartphones */
+@media (max-width: 599px) {
+    header {
+        text-align: center;
+    }
+
+    header img {
+        max-width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+
+    #mission {
+        padding: 10px;
+    }
+}
+
+/* Example logo styling */
+header {
+    text-align: left;
+}
+
+header img {
+    max-width: 60%;
+    height: auto;
+    padding: 10px;
+}
+
+/* Example mission and vision styling */
+#mission {
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+}
+
+/* Footer styles */
+footer {
+    background-color: rgb(26 102 255); /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px; /* Spacing inside the footer */
+    text-align: center; /* Center-align the content */
+}
+
+/* Copyright text styles */
+footer p {
+    font-size: 14px; /* Adjust font size */
+}
+
+/* List styles */
+footer ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove list padding */
+}
+
+/* List item styles */
+footer li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 10px; /* Add space between list items */
+}
+
+/* Link styles */
+footer a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underlines */
+}
+
+/* Hover styles for links */
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
