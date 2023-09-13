@@ -21,23 +21,34 @@ In today's digital era, users access platforms from a myriad of devices with var
 
 The HTML structure for this project includes a basic template that you can modify and expand to fit your specific content. Here's a simplified example:
 
+     ```html
+     <!DOCTYPE html>
+     <html>
+     <head>
+         <title>BAG Ltd - Responsive Website</title>
+     </head>
+     <body>
+         <header>
+             <!-- Add your header content here -->
+         </header>
+     
+         <main>
+             <!-- Add your main content here -->
+         </main>
+     
+         <footer>
+             <!-- Add your footer content here -->
+         </footer>
+     </body>
+     </html>
+CSS Styles
+
+To style this project, you can use the included CSS file (style.css). Here's an example of styling the footer:
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>BAG Ltd - Responsive Website</title>
-</head>
-<body>
-    <header>
-        <!-- Add your header content here -->
-    </header>
-
-    <main>
-        <!-- Add your main content here -->
-    </main>
-
-    <footer>
-        <!-- Add your footer content here -->
-    </footer>
-</body>
-</html>
+     /* Footer styles */
+     footer {
+         background-color: #333;
+         color: #fff;
+         padding: 20px;
+         text-align: center;
+     }
