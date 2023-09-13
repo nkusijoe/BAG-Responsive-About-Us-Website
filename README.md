@@ -51,5 +51,5 @@ This project is a simple company website for BAG Ltd. It includes an "About Us" 
 
 ## Author
 
-- [Your Name]
+- Nkusi Joe David
 
