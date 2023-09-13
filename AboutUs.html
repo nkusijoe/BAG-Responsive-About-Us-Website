@@ -12,16 +12,78 @@
     <section id="mission">
         <!-- Mission and Vision content here -->
         <h2>Mission</h2>
-            <p>Gain work experience and get employed with top companies in Africa.</p>
+        <p>Gain work experience and get employed with top companies in Africa.</p>
         <h2>Vision</h2>
-            <p>Complete tasks every week with high scores.Get employed in less than 8 months.</p>
+        <p>Complete tasks every week with high scores. Get employed in less than 8 months.</p>
     </section>
+
+    <!-- Feedback Form Section -->
+    <section id="feedback">
+        <h2>Provide Feedback</h2>
+        <form id="feedbackForm">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName" required><br><br>
+
+            <label for="userEmail">Email:</label>
+            <input type="email" id="userEmail" name="userEmail" required><br><br>
+
+            <label for="feedbackText">Feedback:</label><br>
+            <textarea id="feedbackText" name="feedbackText" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+    <section id="feedbackSuccess" style="display: none;">
+    <h2>Feedback Received</h2>
+    <p><span id="senderName"></span>, Thank you for your feedback!</p>
+    <p>Would you like to submit additional feedback?</p>
+    <a href="#" id="submitAdditionalFeedback">Submit Additional Feedback</a>
+</section>
+
+
     <footer>
         <p>&copy; BAG Ltd 2023</p>
-    <ul>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-    </ul>
+        <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
     </footer>
+
+    <!-- JavaScript for Form Submission and Success Message -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const feedbackForm = document.getElementById("feedbackForm");
+            const feedbackSuccess = document.getElementById("feedbackSuccess");
+            const submitAdditionalFeedback = document.getElementById("submitAdditionalFeedback");
+            const senderNameElement = document.getElementById("senderName");
+
+            feedbackForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Get the sender's name from the form
+                const senderName = document.getElementById("userName").value;
+
+                // Populate the sender's name in the success message
+                senderNameElement.textContent = senderName;
+
+                // Hide the form and show the success message
+                feedback.style.display = "none";
+                feedbackSuccess.style.display = "block";
+            });
+
+            // If the user wants to submit additional feedback, reset the form
+            submitAdditionalFeedback.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                // Show the form again and hide the success message
+                feedback.style.display = "block";
+                feedbackSuccess.style.display = "none";
+
+                // Reset the form fields
+                feedbackForm.reset();
+            });
+        });
+    </script>
 </body>
 </html>
