@@ -53,6 +53,3 @@ This project is a simple company website for BAG Ltd. It includes an "About Us" 
 
 - [Your Name]
 
-## License
-
-This project is licensed under the [License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
